@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sha256 Guessing Game</title>
+    <script type="text/javascript" charset="utf-8" src="shaguess.js"></script>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        div {
+            display: grid;
+            place-items: center;
+            background-color: #f00db4b3;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body onload="main()">
+<div>
+    <h1>Sha256 Guessing Game</h1>
+    <h3>
+        You are given a target sha256 hash, try to guess the input string
+    </h3>
+    <h3>
+        The input string is guaranteed to be an 8 character long integer. (to make it easier)
+    </h3>
+    <label>
+        <input type="number" id="text" placeholder="Sha256 Guess" maxlength="8">
+        <button id="guess">Guess</button>
+    </label>
+    <h3>
+        Target hash:
+    </h3>
+    <h2 id="target"></h2>
+
+    <h4 id="guessinfo">
+
+    </h4>
+
+</div>
+</body>
+</html>
